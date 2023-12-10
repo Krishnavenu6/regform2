@@ -1,7 +1,6 @@
 package ODL;
 
 import java.util.Scanner;
-import java.util.*;
 
 public class CourseDetails {
 	Scanner sc=new Scanner(System.in);
@@ -19,46 +18,54 @@ public class CourseDetails {
 		
 		int select=sc.nextInt();
 		
-		InteractiveLearning ILC=new InteractiveLearning();
+		CourseDescription CD=new CourseDescription();
 		
 		switch(select) {
 		  case 1:
+			    System.out.println("----------------------------");
 			    System.out.println("Input and Output in Python");
 			    System.out.println("Python Object Oriented");
 			    System.out.println("Python Regular Expressions");
 			    System.out.println("Using Databases in Python");
 			    System.out.println("Data Science Using Python");
-			    ILC.PythonLearn();
+			    System.out.println("----------------------------");
+			    
+			    CD.CourseDescription1();
 			    break;
 		    
 		  case 2:
-		    
-			    System.out.println("Boolean logicL");
+		        System.out.println("----------------------------");
+			    System.out.println("Boolean logic");
 			    System.out.println("Basic operators");
 			    System.out.println("If/else statements");
 			    System.out.println("Loop logic and iteration");
 			    System.out.println("Functions as arguments");
-			    ILC.JavaScriptLearn();
+			    System.out.println("-----------------------------");
+			    CD.CourseDescription2();
 			    break;
 		    
 		  case 3:
-		    
+		        System.out.println("-----------------------------");
 			    System.out.println("Basic Language Elements");
 			    System.out.println("Object Oriented Programming");
 			    System.out.println("Exception Handling");
 			    System.out.println("Event Handling");
 			    System.out.println("JDBC Connectivity");
-			    ILC.JavaLearn();
+			    System.out.println("-----------------------------");
+			    CD.CourseDescription3();
+			    System.out.println("Enter 1 to Change Language");
+			    System.out.println("Enter 2 for Main Menu");
 			    break;
 		    
 		  case 4:
-		   
+		       System.out.println("------------------------------");
 			   System.out.println("Basic Structure of WebPage");
 			   System.out.println("HTML Embedding Videos");
 			   System.out.println("CSS Color Names and Codes");
 			   System.out.println("CSS Relative Positioning");
 			   System.out.println("Embedding Bootstrap");
-			   ILC.BootStrapLearn();
+			   System.out.println("------------------------------");
+			   CD.CourseDescription4();
 			    break;
 		    
 		    }
