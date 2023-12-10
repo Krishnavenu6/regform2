@@ -1,7 +1,8 @@
 package ODL;
 
+import java.io.IOException;
+import java.net.URISyntaxException;
 import java.sql.Connection;
-import java.util.*;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -75,6 +76,88 @@ public class Reg {
 				}
 				
 		}
+	}
+	public void home() {
+		System.out.println("----------------------------------------");
+		  System.out.println("You are Logged into Website");
+		  System.out.println("----------------------------------------");
+		  System.out.println("Enter 1 to Show Course Details");
+		  System.out.println("Enter 2 to participate Quiz");
+		  System.out.println("Enter 3 to Interactive Learning");
+		  System.out.println("Enter 4 to Course Videos");
+		  
+		  int select=sc.nextInt();
+		  CourseDetails cd= new CourseDetails();
+		  switch(select) {
+		  case 1:
+			try {
+				cd.CourseDetails1();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			    break;					    
+		  case 2:
+			    ParticipateQuiz pq=new ParticipateQuiz();
+			    pq.ParticipateQuiz1();
+			    break;					    
+		  case 3:
+			    InteractiveLearning IL=new InteractiveLearning();
+			    System.out.println("Enter 1 for  Python Learning");
+			    System.out.println("Enter 2 for JavaScript Learning");
+			    System.out.println("Enter 3 for  Java  Learning");
+			    System.out.println("Enter 4 for BootStrap Learning");
+			    Scanner sc1=new Scanner(System.in);
+			    int choice=sc1.nextInt();
+			    switch(choice) {
+			    case 1:
+			    	try {
+						IL.PythonLearn();
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+			    	break;
+			    case 2:
+			    	try {
+						IL.JavaScriptLearn();
+					} catch (URISyntaxException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+			    	break;
+			    case 3:
+			    	try {
+						IL.JavaLearn();
+					} catch (URISyntaxException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+			    	break;
+			    case 4:
+			    	try {
+						IL.BootStrapLearn();
+					} catch (URISyntaxException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+			        break;
+			    }
+		  case 4:
+			    regApplication rA=new regApplication();
+			    rA.videolink();
+			    break;
+//			  InteractiveLearning();
+		    }
 	}
 	
 

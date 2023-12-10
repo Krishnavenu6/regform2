@@ -1,99 +1,151 @@
 package ODL;
 
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.Scanner;
-import java.util.*;
 
 public class InteractiveLearning {
 	Scanner sc = new Scanner(System.in);
 	
 		public void PythonLearn() throws Exception{
         System.out.println("Enter 1 for course structure");
-        System.out.println("Enter 2 for course certificate");
-        System.out.println("Enter 3 for course videos");
+        System.out.println("Enter 2 for Course Mock Test");
+        System.out.println("Enter 3 for Online Compiler");
         int choice = sc.nextInt();
 
         switch (choice) {
             case 1:
-                System.out.println("https://roadmap.sh/java");
+            	Desktop desktop = java.awt.Desktop.getDesktop();
+            	
+  			    URI oURL1 = new URI("https://roadmap.sh/python");
+  			    desktop.browse(oURL1);
+                
                 break;
             case 2:
-                System.out.println("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Fcertificate-template-printable-in-gold-and-black-vector-40502183&psig=AOvVaw3qPU5CFvqt1C-5oI1OUxaG&ust=1702105288718000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCJijkLui_4IDFQAAAAAdAAAAABAE");
+               Desktop desktop1 = java.awt.Desktop.getDesktop();
+            	
+  			   URI oURL2 = new URI("https://www.w3schools.com/quiztest/quiztest.asp?qtest=PYTHON");
+  			   desktop1.browse(oURL2);
+                
                 break;
             case 3:
-                System.out.println("https://www.youtube.com/watch?v=VHbSopMyc4M&list=PLBlnK6fEyqRjKA_NuK9mHmlk0dZzuP1P5");
-                break;
+               Desktop desktop2 = java.awt.Desktop.getDesktop();
+            	
+   			   URI oURL3 = new URI("https://www.programiz.com/python-programming/online-compiler/");
+   			   desktop2.browse(oURL3);
+                 
+                 break;
             default:
                 System.out.println("You Entered A Wrong Number");
                 break;
         }
-        
+        PythonLearn();
     }     
-		public void JavaScriptLearn() {
+		public void JavaScriptLearn() throws URISyntaxException, IOException {
 	        System.out.println("Enter 1 for course structure");
-	        System.out.println("Enter 2 for course certificate");
-	        System.out.println("Enter 3 for course videos");
+	        System.out.println("Enter 2 for Course Mock Test");
+	        System.out.println("Enter 3 for Online Compiler");
 	        int choice = sc.nextInt();
 
 	        switch (choice) {
-	            case 1:
-	                System.out.println("js");
-	                break;
-	            case 2:
-	                System.out.println("js linl");
-	                break;
-	            case 3:
-	                System.out.println("js link");
-	                break;
-	            default:
-	                System.out.println("You Entered A Wrong Number");
-	                break;
+	        case 1:
+            	Desktop desktop = java.awt.Desktop.getDesktop();
+            	
+  			    URI oURL1 = new URI("https://roadmap.sh/javascript");
+  			    desktop.browse(oURL1);
+                
+                break;
+            case 2:
+               Desktop desktop1 = java.awt.Desktop.getDesktop();
+            	
+  			   URI oURL2 = new URI("https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS");
+  			   desktop1.browse(oURL2);
+                
+                break;
+            case 3:
+               Desktop desktop2 = java.awt.Desktop.getDesktop();
+            	
+   			   URI oURL3 = new URI("https://www.programiz.com/javascript/online-compiler/");
+   			   desktop2.browse(oURL3);
+                 
+                 break;
+            default:
+                System.out.println("You Entered A Wrong Number");
+                break;
 	        }
-	        sc.close();
+	        JavaScriptLearn();
 	    }
-		public void JavaLearn() {
+		public void JavaLearn() throws URISyntaxException, IOException {
 	        System.out.println("Enter 1 for course structure");
-	        System.out.println("Enter 2 for course certificate");
-	        System.out.println("Enter 3 for course videos");
+	        System.out.println("Enter 2 for Course Mock Test");
+	        System.out.println("Enter 3 for Online Compiler");
 	        int choice = sc.nextInt();
 
 	        switch (choice) {
-	            case 1:
-	                System.out.println("j");
-	                break;
-	            case 2:
-	                System.out.println("jlink");
-	                break;
-	            case 3:
-	                System.out.println("j linl");
-	                break;
-	            default:
-	                System.out.println("You Entered A Wrong Number");
-	                break;
+	        case 1:
+            	Desktop desktop = java.awt.Desktop.getDesktop();
+            	
+  			    URI oURL1 = new URI("https://roadmap.sh/java");
+  			    desktop.browse(oURL1);
+                
+                break;
+            case 2:
+               Desktop desktop1 = java.awt.Desktop.getDesktop();
+            	
+  			   URI oURL2 = new URI("https://www.w3schools.com/quiztest/quiztest.asp?qtest=JAVA");
+  			   desktop1.browse(oURL2);
+                
+                break;
+            case 3:
+               Desktop desktop2 = java.awt.Desktop.getDesktop();
+            	
+   			   URI oURL3 = new URI("https://www.programiz.com/java-programming/online-compiler/");
+   			   desktop2.browse(oURL3);
+                 
+                 break;
+            default:
+                System.out.println("You Entered A Wrong Number");
+                break;
 	        }
-	        sc.close();
+	        JavaLearn();
 	    }
-		public void BootStrapLearn() {
-	        System.out.println("Enter 1 for course structure");
-	        System.out.println("Enter 2 for course certificate");
-	        System.out.println("Enter 3 for course videos");
+		public void BootStrapLearn() throws URISyntaxException, IOException {
+	        System.out.println("Enter 1 for Course Structure");
+	        System.out.println("Enter 2 for Course Mock Test");
+	        System.out.println("Enter 3 for Online Compiler");
 	        int choice = sc.nextInt();
 
 	        switch (choice) {
-	            case 1:
-	                System.out.println("b");
-	                break;
-	            case 2:
-	                System.out.println("jlink");
-	                break;
-	            case 3:
-	                System.out.println("jlink");
-	                break;
-	            default:
-	                System.out.println("You Entered A Wrong Number");
-	                break;
+	        case 1:
+            	Desktop desktop = java.awt.Desktop.getDesktop();
+            	
+  			    URI oURL1 = new URI("https://roadmap.sh/frontend");
+  			    desktop.browse(oURL1);
+                
+                break;
+            case 2:
+               Desktop desktop1 = java.awt.Desktop.getDesktop();
+            	
+  			   URI oURL2 = new URI("https://www.w3schools.com/quiztest/quiztest.asp?qtest=BOOTSTRAP");
+  			   desktop1.browse(oURL2);
+                
+                break;
+            case 3:
+               Desktop desktop2 = java.awt.Desktop.getDesktop();
+            	
+   			   URI oURL3 = new URI("https://onecompiler.com/html/3x2894xaw");
+   			   desktop2.browse(oURL3);
+                 
+                 break;
+            default:
+                System.out.println("You Entered A Wrong Number");
+                break;
 	        }
-	        sc.close();
+	        BootStrapLearn();
 	    }
+	    
   
 }
 

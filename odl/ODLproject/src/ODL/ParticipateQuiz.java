@@ -1,7 +1,6 @@
 package ODL;
 
 import java.util.Scanner;
-import java.util.*;
 
 public class ParticipateQuiz {
 	Scanner sc=new Scanner(System.in);
